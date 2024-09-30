@@ -12,32 +12,62 @@
   </head>
   <body>
   <section>
-      <nav class="nav__container">
-        <figure class="logo__wrapper">
-          <img class="logo" src="./assets/Treact_Logo.svg" alt="" />
-          <p class="logo__link">Treact</p>
+      <nav>
+        <div class="nav__container">
+          <figure class="logo__wrapper">
+              <img class="logo" src="./assets/Treact_Logo.svg" alt="" />
+              <p class="logo__link">Treact</p>
         </figure>
-        <ul class="nav__links">
-          <li>
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li>
-            <a href="#blog" class="nav__link">Blog</a>
-          </li>
-          <li>
-            <a href="#pricing" class="nav__link">Pricing</a>
-          </li>
-          <li>
-            <a href="#contact us" class="nav__link">Contact Us</a>
-          </li>
-          <li>
-            <a href="#login" class="nav__link nav__link--secondary">Login</a>
-          </li>
-          <li>
-            <a href="#Sign Up" class="nav__link nav__link--primary">Sign Up</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="nav__links">
+                <li>
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li>
+                    <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li>
+                    <a href="#pricing" class="nav__link">Pricing</a>
+                </li>
+                <li>
+                    <a href="#contact us" class="nav__link">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#login" class="nav__link nav__link--secondary">Login</a>
+                </li>
+                <li>
+                    <a href="#Sign Up" class="nav__link nav__link--primary">Sign Up</a>
+                </li>
+            </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>        
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>            
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick="closeMenu()">About<a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link no-cursor" onclick="closeMenu()">Blog<a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" onclick="closeMenu()">Sign Up</a>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
     <header>
         <div class="header__row">
           <div class="header__description--container">
@@ -354,7 +384,7 @@
                                         <i class="fa-solid fa-arrow-left"></i>
                                     </button>
                                     <div>
-                                        <span class="vertical-line"></span>
+                                        <div class="vertical-line"></div>
                                     </div>
                                     <button class="slider__arrow">
                                         <i class="fa-solid fa-arrow-right"></i>
