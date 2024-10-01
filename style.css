@@ -192,11 +192,12 @@ button:hover {
     border: none;
     color: #7432d6;
     display: none;
+    padding: 0;
 }
  
 .menu__backdrop {
     position: absolute;
-    background-color: #242424;
+    background-color: white;
     top: 0;
     left: 0;
     right: 0;
@@ -213,6 +214,12 @@ button:hover {
 .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
+    
+}
+
+.signup { 
+    background-color: #6415ff;
+    padding: 25px 55px; 
 }
 
 .menu--open {
@@ -225,26 +232,33 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 20px;
 }
 
 .menu__list {
-    padding: 32px 0;
+    padding: 32px 35px;
 }
 
 .menu__link {
     font-size: 40px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .btn__menu--close {
 position: absolute;
 right: 20px;
 top: 10px;
 padding: 8px;
-color: white;
+color: #7432d6;
 }
 
+.btn__menu:hover {
+    background-color: white;
+    color: #7432d6;
+    border: 0;
+    transition: none;
 
+}
 
 /* 
 
@@ -1304,6 +1318,10 @@ footer {
         text-align: center;
     }
 
+    .quality-work__img--wrapper {
+        margin-bottom: 80px;
+    }
+
     .quality__work--wrapper {
         display: flex;
         flex-direction: column;
@@ -1318,7 +1336,7 @@ footer {
     .quality__work--description {
         width: 100%;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 80px 40px ;
     }
 
     .steps__wrapper {
