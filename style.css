@@ -981,7 +981,7 @@ FAQS
     display: flex;
     align-items: left;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     color: black;
@@ -994,7 +994,7 @@ FAQS
 #accordion input[type="radio"] {
     display: none;
 }
-#accordion li content {
+#accordion .content {
     text-align: left;
     line-height: 26px;
     max-height: 0;
@@ -1020,7 +1020,6 @@ FAQS
 #accordion input[type="radio"]:checked + label .accordion__arrow svg { 
     transform: rotate(-90deg);
 }
-
 /*
 
 GET STARTED
