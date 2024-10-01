@@ -490,6 +490,7 @@ STEPS
 
 */
 
+
 .steps__wrapper {
     display: flex;
     align-items: center;
@@ -631,6 +632,7 @@ PRICING
 
 #pricing__header--para {
     padding: 0 160px;
+    margin: 20px 0 0;
 }
 
 .plans {
@@ -643,11 +645,9 @@ PRICING
     width: calc(100%/3);
     background-color: rgb(255 255 255); 
     margin: 80px 40px 0 40px;
-    border-top: 10px;
     border-right: 1px solid #cbd5ed;
     border-left: 1px solid #cbd5ed;
     border-bottom: 1px solid #cbd5ed;
-    border-width: 100%;
     border-radius: 10px;
     text-align: center;
 }
@@ -699,13 +699,16 @@ PRICING
 }
 
 .plan__header {
-    display: flex;
-    flex-direction: column;
     background: #FFFFFF
-    padding: 40px 0;
-    padding-bottom: 40px;
     line-height: 1.625;
     text-transform: uppercase;  
+    display: flex;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    align-items: center;
+    padding: 40px 40px;
+    width: 100%;   
 }
 
 .name {
@@ -1344,10 +1347,15 @@ footer {
     }
 
     .steps__description--wrapper {
-        display: flex;
-        flex-direction: column;
+        text-align: center;
         width: 100%;
         padding: 0;
+    }
+
+    .steps__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .steps__subheading {
@@ -1368,15 +1376,10 @@ footer {
 
     .steps__lists {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
+        align-items: center;  
     }
 
-    .steps__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
     .steps__number {
         text-align: center;
