@@ -506,21 +506,19 @@ STEPS
 .steps__description--wrapper {
     display: flex;
     flex-direction: column;
-    width: 50%;
     padding: 0 0 0 80px;
 }
 
 .steps_description {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 30px;
 }
 
 .steps__lists {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
 
 .steps__list {
     display: flex;
@@ -528,17 +526,18 @@ STEPS
 }
 
 .steps__number {
-    display: flex;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
-    color: #cbd5ed;
+    color: #cbd5e0;
+    margin: 0 30px 0 0;
 }
 
 #steps__para {
+    max-width: 20rem    ;
     font-size: 20px;
     font-weight: 500;
     line-height: 2;
-    margin: 15px 0 0!important;
+    margin: 15px 0 0;
 }
 
 /*
@@ -637,14 +636,15 @@ PRICING
 
 .plans {
     display: flex;
+    justify-content: space-between;
 }
 
 .plan {
     display: flex;
     flex-direction: column;
     width: calc(100%/3);
-    background-color: rgb(255 255 255); 
-    margin: 80px 40px 0 40px;
+    margin: 80px 40px 0 0;
+    padding: 10px 0;
     border-right: 1px solid #cbd5ed;
     border-left: 1px solid #cbd5ed;
     border-bottom: 1px solid #cbd5ed;
@@ -655,9 +655,9 @@ PRICING
 
 #personal,
 #enterprise {
-        position: relative;
-        background: white;
-        box-sizing: border-box;
+    position: relative;
+    background: white;
+    box-sizing: border-box;
 }
 
 #personal::before {
@@ -704,10 +704,9 @@ PRICING
     text-transform: uppercase;  
     display: flex;
     flex-direction: column;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     align-items: center;
-    padding: 40px 40px;
+    padding: 40px 0;
     width: 100%;   
 }
 
@@ -721,25 +720,43 @@ PRICING
 .price {
     font-size: 70px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 30px 0;
 }
 
 .duration {
     font-size: 24px;
     font-weight: bolder;
-    color:rgb(179, 187, 197);
+    color: #a0aec0;
     opacity: 10;
 }
 
 .plan__features {
     display: flex;
     flex-direction: column;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     align-items: center;
-    padding: 40px 40px;
-    width: 100%;   
+    padding: 40px;
 }
+
+#plan__features {
+    display: flex;
+    flex-direction: column;
+    border-bottom-width: 1px;
+    align-items: center;
+    padding: 40px; 
+    border-color: rgb(66 153 225);
+}
+
+#plan__header {
+    color: white;
+    border-color: rgb(66 153 225);
+    display: flex;
+    flex-direction: column;
+    border-bottom-width: 1px;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;   
+}    
 
 .main__features {
     color: #000000;
@@ -751,14 +768,50 @@ PRICING
     color: #718096;
     font-size: 20px;
     font-weight: bolder;
-    margin: 25px 0 0;
+    margin: 40px 0 0;
+}
+
+#main__features {
+    color: #f7fafc;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#name,
+#price,
+#main__feature {
+    color: #f7fafc;
+}
+
+#name {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+#price {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#duration {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #edf2f7;
+    opacity: 10;
 }
 
 #feature {
-    color: white;
+    color: rgb(226, 232, 240);
 }
 
 .plan__action--wrapper {
+    padding: 40px;
+}
+
+#plan__action--wrapper {
     padding: 40px;
 }
 
@@ -766,8 +819,8 @@ PRICING
     color: rgb(226, 232, 240);
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     opacity: 1;
-    width: 70%;
-    padding: 30px 50px;
+    width: 68%;
+    padding: 30px 10px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -776,8 +829,8 @@ PRICING
     color: #6415ff;
     background:rgb(247 250 252); 
     opacity: 1;
-    width: 70%;
-    padding: 30px 50px;
+    width: 68%;
+    padding: 30px 10px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -786,8 +839,8 @@ PRICING
     color: rgb(226, 232, 240);
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     opacity: 1;
-    width: 70%;
-    padding: 30px 50px;
+    width: 68%;
+    padding: 30px 10px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -1191,7 +1244,7 @@ footer {
 
 .copyright {
     width: 50%;
-    color: rgb(226, 232, 240);;
+    color: rgb(203 213 224);
     text-align: center;
     margin: 0;
 }
@@ -1221,6 +1274,10 @@ footer {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
+ 
+    .container {
+        padding: 100px 0;
+    }
 
     .nav__links {
         display: none;
@@ -1283,7 +1340,7 @@ footer {
     }
 
     .features__wrapper {
-        margin: 0;
+        text-align: left;
     }
 
     .features__heading {
@@ -1293,11 +1350,14 @@ footer {
         text-align: center;
     }
 
+    .features__subheading {
+        text-align: center;
+    }
+
     .features__para {
         font-size: 24px;
         text-align: center;
         width: 100%;
-        margin: 0;
     }
 
     .services {
@@ -1305,19 +1365,25 @@ footer {
     }
     
     .service {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
         width: 100%;
         max-width: 80%;
-        margin: 0 20px;
-        padding: 40px 10px;
+        padding: 0;
+        margin: 0 0 0 60px;
     }
 
     .service__heading {
-        text-align: center;
+        margin: 0;
+        br { content: ""; }
+        br:after { content: " "; } 
     }
 
     .service__para {
-        margin: 0;
-        text-align: center;
+        font-size: 20px;
+        margin: 20px 0 0;
+        line-height: 2;
     }
 
     .quality-work__img--wrapper {
@@ -1380,10 +1446,9 @@ footer {
         align-items: center;  
     }
 
-
     .steps__number {
         text-align: center;
-        margin: 10px 0;
+        margin: 0;
     }
 
     .steps__para {
@@ -1413,17 +1478,17 @@ footer {
 
     .values__subheading {
         margin: 80px 0 20px;
-
     }
     
     .values__para {
-        margin: 40px 0 0;
+        width: 90%;
+        margin: 40px 40px 0;
     }
 
     .values__features--container {
         display: flex;
         flex-direction: column;
-        margin: 0 56px;
+        margin: 0 100px;
     }
 
     .values-features__heading--container {
@@ -1447,11 +1512,6 @@ footer {
     .pricing__wrapper {
         display: flex;
         flex-direction: column;
-    }
-
-    .pricing__header--heading {
-        font-size: 60px;
-        font-weight: 500px;
     }
 
     #pricing__header--para {
@@ -1484,6 +1544,18 @@ footer {
         font-size: 45px;
     }
 
+    #personal__action,
+    #business__action,
+    #enterprise__action {
+    padding: 20px 40px;
+    br { content: ""; }
+    }
+
+    .plan {
+        margin: 80px 0 0;
+        padding: 0 40px;
+    }
+
     .testimonials__wrapper {
         display: flex;
         flex-direction: column;
@@ -1498,7 +1570,8 @@ footer {
 
     .ratings__container {
         width: 100%;
-        padding: 0;
+        margin: 80px 70px 0;
+        padding: 0px 60px;
         text-align: center;
     }
     
@@ -1599,19 +1672,22 @@ footer {
 @media (max-width: 550px) {
 
     .btn__menu {
-        display: flex;
-    }
-    
-    .row {
-        padding: 100px 0;
+        margin: 0;
     }
 
-    .header__row {
-        padding: 100px 0;
+    .btn__menu {
+        display: flex;
     }
 
     .container {
-        padding: 100px 0;
+        padding: 100px 40px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header__row {
+        padding: 100px 40px;
+        margin: 0;
     }
 
     .footer__content--wrapper {
@@ -1636,6 +1712,9 @@ footer {
         margin: 25px 0;
     }
 
+    .features__wrapper {
+        margin: 0;
+    }
     .features__para {
         font-size: 20px;
         color: rgb(124 139 161);
@@ -1659,11 +1738,17 @@ footer {
         margin: 40px 0 0;
     }
 
+    .customers-logo_img {
+        padding: 0;
+    }
+
     .service {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 0 20px;
+        width: 100%;
     }
 
     .service__heading {
@@ -1703,6 +1788,15 @@ footer {
         margin: 0;
     }
 
+    .values__para {
+        margin: 0;
+        width: 100%;
+    }
+
+    .values__features--container {
+        margin: 0 35px;
+    }
+
     .pricing__header--heading {
         font-size: 48px;
         font-weight: 900;
@@ -1714,9 +1808,16 @@ footer {
     }
 
     #personal__action, 
-    #enterprise__action {
+    #enterprise__action,
+    #business__action {
         margin: 0;
         padding: 20px 40px;
+        width: 100%;
+    }
+
+    .main__features {
+        br { content: ""; }
+
     }
 
     #business__action {
