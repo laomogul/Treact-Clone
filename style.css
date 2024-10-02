@@ -190,9 +190,10 @@ button:hover {
     font-size: 40px;
     text-align: center;
     border: none;
-    color: #7432d6;
+    color: #243e63;
     display: none;
     padding: 0;
+    transition: all 300ms ease;
 }
  
 .menu__backdrop {
@@ -244,20 +245,19 @@ button:hover {
     text-decoration: none;
     color: black;
 }
+
 .btn__menu--close {
 position: absolute;
 right: 20px;
 top: 10px;
 padding: 8px;
-color: #7432d6;
+color: #6415ff;
 }
 
 .btn__menu:hover {
     background-color: white;
-    color: #7432d6;
+    color: #6415ff;
     border: 0;
-    transition: none;
-
 }
 
 /* 
@@ -704,7 +704,7 @@ PRICING
     text-transform: uppercase;  
     display: flex;
     flex-direction: column;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     align-items: center;
     padding: 40px 0;
     width: 100%;   
@@ -733,7 +733,7 @@ PRICING
 .plan__features {
     display: flex;
     flex-direction: column;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     align-items: center;
     padding: 40px;
 }
@@ -741,18 +741,18 @@ PRICING
 #plan__features {
     display: flex;
     flex-direction: column;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     align-items: center;
     padding: 40px; 
-    border-color: rgb(66 153 225);
+    border-color: rgb(102 126 234);
 }
 
 #plan__header {
     color: white;
-    border-color: rgb(66 153 225);
+    border-color: rgb(102 126 234);
     display: flex;
     flex-direction: column;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     align-items: center;
     padding: 40px 0;
     width: 100%;   
@@ -1279,6 +1279,11 @@ footer {
         padding: 100px 0;
     }
 
+    .nav__container {
+        display: flex;
+        align-items: center;
+    }
+
     .nav__links {
         display: none;
     }
@@ -1553,7 +1558,6 @@ footer {
 
     .plan {
         margin: 80px 0 0;
-        padding: 0 40px;
     }
 
     .testimonials__wrapper {
@@ -1691,8 +1695,9 @@ footer {
     }
 
     .footer__content--wrapper {
-        padding: 0;
+        padding: 100px 40px 100px 40px;
     }
+    
 
     .nav__container {
         margin: 40px 40px 0 40px;
@@ -1959,3 +1964,4 @@ footer {
         height: 50px;
     }
 }
+
