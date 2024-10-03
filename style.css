@@ -826,6 +826,7 @@ PRICING
     color: rgb(226, 232, 240);
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     padding: 30px 10px;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
@@ -1556,7 +1557,6 @@ footer {
     #personal__action,
     #business__action,
     #enterprise__action {
-    padding: 20px 40px;
     br { content: ""; }
     }
 
@@ -1821,7 +1821,6 @@ footer {
     #business__action {
         margin: 0;
         padding: 20px 40px;
-        width: 100%;
     }
 
     .main__features {
